@@ -4,7 +4,9 @@ cd TastierCompiler
 make
 
 cd ../TastierMachine
-cabal
+cabal configure
+cabal build
+cabal install
 
 cd ../TastierCompiler
 mono bin/tcc.exe test/Programs/Test.TAS test.asm
